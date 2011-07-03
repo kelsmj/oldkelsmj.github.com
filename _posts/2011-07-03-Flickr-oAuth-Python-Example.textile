@@ -9,11 +9,13 @@ I always wanted to write an application that will use the Flickr API to pull all
 
 I decided to write this app in python, a language which I have no professional experience in, and have only recently dabbled with.  I figured it would be a good learning experience.  We will see!
 
-The first thing that needs to be accomplished, in order to make calls to the Flickr API, is authenticate a user.  Flickr just recently added support for using OAuth to authenticate a user ("Using OAuth with Flickr":http://www.flickr.com/services/api/auth.oauth.html) and they will be removing their old authentication API in the future.  The focus of this post will outline the steps I took in order to successfully use OAuth to authenticate against my application and make subsequent requests to get data about my photos.
+The first thing that needs to be accomplished, in order to make calls to the Flickr API, is authenticate a user.  Flickr just recently added support for using OAuth to authenticate a user ("Using OAuth with Flickr":http://www.flickr.com/services/api/auth.oauth.html) and they will be removing their old authentication API in the future.  The focus of this post will outline the steps I took in order to successfully use OAuth to authenticate against my application.
 
 The code below has two prerequisites in order to work correctly:
-# A text file called "apikeys" in the root directory containing the api_key (consumer_key) and secret for your application.  You get the key and secret by creating a new Flickr Application associated with your account.  Go to "The App Garden":http://www.flickr.com/services/apps/create/apply/? to apply for one.  Each entry in this file needs to be on its own line with the api_key coming first.
+# A text file called "apikeys" in the root directory containing the api_key (consumer_key) and secret for your application.  You get the key and secret by creating a new Flickr Application associated with your account.  Go to "The App Garden":http://www.flickr.com/services/apps/create/apply/ to apply for one.  Each entry in this file needs to be on its own line with the api_key coming first.
 # Downloading and installing "python-oauth2":https://github.com/simplegeo/python-oauth2
+
+To setup python-oauth2:
 
 {% highlight console %}
 ~/$ git clone https://github.com/simplegeo/python-oauth2.git
