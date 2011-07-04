@@ -146,4 +146,4 @@ f.closed
 
 If all the requests succeeded you should have a token file in your directory with the _oauth_token_ and the _oauth_token_secret_.  You can use these tokens to make subsequent requests to the Flickr API.  In my next post, I will illustrate how to do this.
 
-Feel free to email me with any questions or comments.  The git repo for this is located https://github.com/kelsmj/FlickrOAuth
+Feel free to email me with any questions or comments.  The git repo for this is located "here":https://github.com/kelsmj/FlickrOAuth
