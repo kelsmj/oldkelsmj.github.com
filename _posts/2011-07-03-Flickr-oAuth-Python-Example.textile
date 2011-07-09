@@ -1,6 +1,7 @@
 ---
 layout: post
 title: OAuth User Authentication for Flickr in Python
+description: Example Python code that shows you how to authenticate using the OAuth authentication scheme for Flickr. 
 ---
 
 h1. {{ page.title }}
